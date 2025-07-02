@@ -1,0 +1,231 @@
+body {
+  background-color: #FAF8F5;
+  margin: 0;
+}
+
+body::before {
+  content: "";
+  background-color: #A9D6CB;
+  width: 30%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+  background-image: url(../img/spa.svg);
+  background-repeat: no-repeat;
+  background-position: top 50px right 30px;
+}
+
+.page {
+  font-family: "Rethink Sans", sans-serif;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-image: url(../img/beauty-woman-skin-care-beautiful-female-hand-touch-8B5MWG9\ 1.png);
+  background-repeat: no-repeat;
+  background-position: top -15px right;
+  background-size: 1200px 800px;
+}
+.page header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.page header figure {
+  margin: 0;
+}
+.page header figure img {
+  width: 200px;
+  height: 50px;
+}
+.page header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+.page header nav ul div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 1px;
+}
+.page header nav ul div img {
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 2px;
+}
+.page header nav ul a {
+  text-decoration: none;
+  color: #264065;
+}
+.page header .nav_2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+.page header .nav_2 .shopping {
+  display: flex;
+  gap: 30px;
+}
+.page header .nav_2 .shopping img {
+  width: 28px;
+  height: 28px;
+}
+.page header .nav_2 .login {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.page header .nav_2 .login a:first-child {
+  text-decoration: underline;
+  color: #264065;
+}
+.page header .nav_2 .login a:last-child {
+  background-color: #264065;
+  color: #FAF8F5;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+}
+.page .hero {
+  max-width: 50%;
+  padding-top: 40px;
+  margin-bottom: 60px;
+}
+.page .hero h1 {
+  color: #264065;
+  font-size: 70px;
+  font-weight: 700;
+  margin: 0;
+}
+.page .hero p {
+  color: #909090;
+  font-size: 23px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+.page .hero .buttons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 36px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.page .hero button:first-child {
+  background-color: #264065;
+  color: #FAF8F5;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  border: none;
+}
+.page .hero span {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 8px;
+}
+.page .hero span img {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  padding: 8px;
+  border-radius: 50px;
+  box-shadow: 1px 1px 15px -4px rgba(0, 0, 0, 0.55);
+}
+.page .hero span button:nth-of-type(1) {
+  background-color: transparent;
+  border: none;
+  color: #264065;
+}
+.page .categories {
+  background-color: white;
+  border-radius: 10px;
+  margin: 0;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 35%;
+}
+.page .categories div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 120px;
+}
+.page .categories div img {
+  width: 60px;
+  height: 60px;
+}
+.page .categories div h3 {
+  font-size: 32px;
+  font-weight: 500;
+  color: #264065;
+  margin: 0;
+}
+.page .categories div p {
+  text-align: center;
+  font-size: 16px;
+  color: #909090;
+  margin: 0;
+}
+.page .comments {
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  top: 380px;
+  right: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.page .comments div {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+  height: 100px;
+}
+.page .comments div img {
+  width: 20px;
+  height: 15px;
+}
+.page .comments div p {
+  font-size: 14px;
+  margin: 0;
+  box-sizing: border-box;
+}
+.page .comments div .user {
+  color: #264065;
+  font-weight: 700;
+}
+.page .comments div:first-child {
+  align-self: flex-start;
+  order: 2;
+}
+.page .comments div:nth-child(2) {
+  align-self: flex-end;
+  order: 1;
+}
+
+footer {
+  background-color: white;
+  width: 100%;
+  height: 150px;
+}/*# sourceMappingURL=style.css.map */

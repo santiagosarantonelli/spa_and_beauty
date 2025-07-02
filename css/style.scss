@@ -1,0 +1,285 @@
+$primary-color: #264065;
+$secondary-color: #A9D6CB;
+$tertiary-color: #909090;
+$quaternary-color:#FAF8F5;
+
+$primary-font: "Rethink Sans", sans-serif;
+
+@mixin button{
+    background-color: $primary-color;
+    color: $quaternary-color;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 25px;
+}
+
+body {
+    background-color: $quaternary-color;
+    margin: 0;
+    
+    
+    
+}
+
+body::before {
+    content: '';
+    background-color: $secondary-color;
+    width: 30%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(../img/spa.svg);
+    background-repeat: no-repeat;
+    background-position: top 50px right 30px;
+}
+
+
+.page {
+    
+    font-family: $primary-font;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-image: url(../img/beauty-woman-skin-care-beautiful-female-hand-touch-8B5MWG9\ 1.png);
+    background-repeat: no-repeat;
+    background-position: top -15px right;
+    background-size: 1200px 800px;
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        margin-top: 10px;
+        font-size: 16px;
+        font-weight: 400;
+        
+
+
+        figure {
+            margin: 0;
+
+            img {
+                width: 200px;
+                height: 50px;
+            }
+        }
+
+        nav {
+            ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                list-style: none;
+                gap: 40px;
+                padding: 0;
+                margin: 0;
+
+                div {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: relative;
+                    gap: 1px;
+
+                    img{
+                        width: 18px;
+                        height: 18px;
+                        position: absolute;
+                        top:2px
+                    }
+                }
+
+                a{
+                    text-decoration: none;
+                    color: $primary-color;
+                }
+            }
+        }
+
+        .nav_2 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+
+            .shopping {
+                display: flex;
+                gap: 30px;
+
+                img {
+                    width: 28px;
+                    height: 28px;
+                }
+            }
+
+            .login {
+                display: flex;
+                align-items: center;
+                gap: 30px;
+
+                a:first-child{
+                    text-decoration: underline;
+                    color: $primary-color;
+                }
+
+                a:last-child{
+                    @include button
+                }
+            }
+        }
+    }
+
+    .hero {
+        max-width: 50%;
+        padding-top: 40px;
+        margin-bottom: 60px;
+        
+
+        h1{
+            color: $primary-color;
+            font-size: 70px;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        p{
+            color: $tertiary-color;
+            font-size: 23px;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 36px;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        button:first-child {
+            @include button();
+            border: none;
+        }
+
+        span {
+
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            gap: 8px;
+
+            img {
+            width: 15px;
+            height: 15px;
+            background-color: white;
+            padding: 8px;
+            border-radius: 50px;
+            box-shadow: 1px 1px 15px -4px rgba(0,0,0,0.55);
+        }
+
+            button:nth-of-type(1){
+            background-color: transparent;
+            border: none;
+            color: $primary-color;
+
+        }
+       } 
+    }
+
+    .categories{
+        background-color: white;
+        border-radius: 10px;
+        margin: 0;
+        padding: 40px;
+        display: flex;
+        justify-content: space-between;
+        max-width: 35%;
+
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            width: 120px;
+
+            img {
+                width: 60px;
+                height: 60px;
+            }
+
+            h3{
+                font-size: 32px;
+                font-weight: 500;
+                color: $primary-color;
+                margin: 0;
+            }
+
+            p {
+                text-align: center;
+                font-size: 16px;
+                color: $tertiary-color;
+                margin: 0;
+            }
+        }
+    }
+
+    .comments {
+        width: 500px;
+        height: 400px;
+        position: absolute;
+        top: 380px;
+        right: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+
+        div {
+            background-color: rgb(255, 255, 255, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            width: 300px;
+            height: 100px;
+
+            img {
+                width: 20px;
+                height: 15px;
+            }
+
+            p {
+                font-size: 14px;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            .user {
+                color: $primary-color;
+                font-weight: 700;
+            }
+        }
+
+        div:first-child{
+            align-self: flex-start;
+            order: 2;
+        }
+
+        div:nth-child(2){
+            align-self: flex-end;
+            order: 1;
+        }
+        
+    }
+
+}
+
+footer {
+    background-color: white;
+    width: 100%;
+    height: 150px;
+}
